@@ -1,8 +1,3 @@
-# dilhan
-"we are on the develop branch"
+# MEAL Track
 
-"this is a feature branch"
-
-" new kjhdkajhsdh
-
-sdsdfsd
+This is a meal scheduling app. You can create Meal plan for any day of the week.
