@@ -8,7 +8,7 @@ Meal Track is a meal scheduling app. You can assign meal to any day of the week.
 ```
  git clone https://github.com/hamzasumbal/Meal-Track
  cd Meal-Track
- npm install or yarn install
+ npm install
 ```
 ## Start Your App
 ```
