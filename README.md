@@ -4,7 +4,7 @@ The App works both on iOS and Android.
 ![](https://user-images.githubusercontent.com/70642483/95232763-5d29e580-081e-11eb-9ab2-99964c534254.png)
 
 You can run the app using expo client on your android device from the link below.\
-https://expo.io/@hamzasumbal/Meal-Track​
+https://expo.io/@hamzasumbal/Meal-Track
 
 ## Features
 - Add Meal 
