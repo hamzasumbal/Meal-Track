@@ -1,0 +1,63 @@
+  {/*  <Spacer>
+                    <Text style={styles.day}>Monday</Text>
+                    <MealCards
+                        item={state.monday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer>
+                <Spacer>
+                    <Text style={styles.day}>Tuesday</Text>
+                    <MealCards
+                        item={state.tuesday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer>
+                <Spacer>
+                    <Text style={styles.day}>Wednesday</Text>
+                    <MealCards
+                        item={state.wednesday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer>
+                <Spacer>
+                    <Text style={styles.day}>Thursday</Text>
+                    <MealCards
+                        item={state.thursday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer>
+                <Spacer>
+                    <Text style={styles.day}>Friday</Text>
+                    <MealCards
+                        item={state.friday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer>
+                <Spacer>
+                    <Text style={styles.day}>Saturday</Text>
+                    <MealCards
+                        item={state.saturday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer>
+                <Spacer>
+                    <Text style={styles.day}>Sunday</Text>
+                    <MealCards
+                        item={state.sunday}
+                        navigation={navigation}
+                        onRefresh ={onRefresh}
+                    />
+                    <View style={styles.divider} />
+                </Spacer> */}
