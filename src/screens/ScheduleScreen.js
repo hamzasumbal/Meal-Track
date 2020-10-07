@@ -41,33 +41,37 @@ const ScheduleScreen = ({ navigation }) => {
 
         
         fadein()
-        curr.setDate(curr.getDate() - (curr.getDay() + 6) % 7);
-        curr.setDate(curr.getDate() - 7);
-
-        // create new date of day before
-        let Monday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
-        let Sunday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate() + 6);
-
-        getMeals(Monday, () => { setLoaded(true) })
-
-
-        setStartDate(`${Monday.getDate()} ${months[Monday.getMonth() + 1]} ${Monday.getFullYear()}`)
-        setLastDate(`${Sunday.getDate()} ${months[Sunday.getMonth() + 1]} ${Sunday.getFullYear()}`)
-
+            curr.setDate(curr.getDate() - (curr.getDay() + 6) % 7);
+            curr.setDate(curr.getDate() - 7);
+    
+            // create new date of day before
+            let Monday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
+            let Sunday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate() + 6);
+    
+            getMeals(Monday, () => { setLoaded(true) })
+    
+    
+            setStartDate(`${Monday.getDate()} ${months[Monday.getMonth() + 1]} ${Monday.getFullYear()}`)
+            setLastDate(`${Sunday.getDate()} ${months[Sunday.getMonth() + 1]} ${Sunday.getFullYear()}`)
+    
+       
+       
     }
 
 
     const rightShiftWeek = () => {
         fadein()
-        
-        curr.setDate(curr.getDate() + (1 - curr.getDay() - 7) % 7 + 7);
-        let Monday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
-        let Sunday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate() + 6);
 
-        getMeals(Monday, () => { setLoaded(true) })
-        setStartDate(`${Monday.getDate()} ${months[Monday.getMonth() + 1]} ${Monday.getFullYear()}`)
-        setLastDate(`${Sunday.getDate()} ${months[Sunday.getMonth() + 1]} ${Sunday.getFullYear()}`)
-       
+            curr.setDate(curr.getDate() + (1 - curr.getDay() - 7) % 7 + 7);
+            let Monday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
+            let Sunday = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate() + 6);
+    
+            getMeals(Monday, () => { setLoaded(true) })
+            setStartDate(`${Monday.getDate()} ${months[Monday.getMonth() + 1]} ${Monday.getFullYear()}`)
+            setLastDate(`${Sunday.getDate()} ${months[Sunday.getMonth() + 1]} ${Sunday.getFullYear()}`)
+           
+        
+        
 
     }
 
@@ -85,9 +89,8 @@ const ScheduleScreen = ({ navigation }) => {
 
 
 
-    const fadein = (callback) => {
+    const fadein = () => {
 
-            fade.setValue(0)
         Animated.timing(
             fade,
             {
@@ -99,8 +102,6 @@ const ScheduleScreen = ({ navigation }) => {
         ).start(()=>{
             fadeout()
         })
-    
-    
 
     }
 
@@ -109,7 +110,7 @@ const ScheduleScreen = ({ navigation }) => {
             fade,
             {
                 toValue: 1,
-                duration: 100,
+                duration: 200,
                 useNativeDriver: true,
             },
 
