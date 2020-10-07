@@ -87,10 +87,7 @@ const ScheduleScreen = ({ navigation }) => {
 
     const fadein = (callback) => {
 
-        if(Platform.OS === "ios")
-        {
             fade.setValue(0)
-        }
         Animated.timing(
             fade,
             {
